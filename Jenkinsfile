@@ -64,7 +64,7 @@ stages
 	{
 		steps
 		{
-			
+			bat "docker build -t rahul/random-image ./"
 		}
 	}
 	
@@ -72,7 +72,7 @@ stages
 	{
 		steps
 		{
-			
+			bat "docker run -d -p 8081:8080 rahul/random-image"
 		}
 	}	
 	
